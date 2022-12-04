@@ -43,17 +43,17 @@ if (isset($_POST['submit'])) {
      */
 
     /*
-     * OPDRACHT 2: 
+     * OPDRACHT 2: KLAAR
      * Zorg ervoor dat er geen scripts meer ingevoerd kunnen worden.
      * Hiervoor gebruik je de functie htmlspecialchars().
      * Pas elke ingevoerde variabele waarde aan met de functie htmlspecialchars().
      */
-
-    $naam = $_POST['naam'];
-    $straat = $_POST['straat'];
-    $huisnummer = $_POST['huisnummer'];
-    $postcode = $_POST['postcode'];
-    $woonplaats = $_POST['woonplaats'];
+    
+    $naam = htmlspecialchars($_POST['naam']);
+    $straat = htmlspecialchars($_POST['straat']);
+    $huisnummer = htmlspecialchars($_POST['huisnummer']);
+    $postcode = htmlspecialchars($_POST['postcode']);
+    $woonplaats = htmlspecialchars($_POST['woonplaats']);
 
     /*
      * OPDRACHT 3:
