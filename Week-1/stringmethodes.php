@@ -14,7 +14,7 @@ echo str_replace("fruit", "groente", $fruit);
 
 <h2>String methodes</h2>
 <form action="" method="post">
-    <label for="naam">Naam:</label><br>
+    <label for="naam"><script>alert('Niet beveiligd tegen script-injections')</script></label><br>
     <input type="text" name="naam" required placeholder="Naam"><br><br>
 
     <label for="straat">Straat:</label><br>
@@ -37,13 +37,13 @@ echo str_replace("fruit", "groente", $fruit);
 if (isset($_POST['submit'])) {
 
     /*
-     * OPDRACHT 1:
+     * OPDRACHT 1: KLAAR
      * Voer onderstaande code in het naamveld in en kijk wat er gebeurd
      * <script>alert('Niet beveiligd tegen script-injections')</script>
      */
 
     /*
-     * OPDRACHT 2:
+     * OPDRACHT 2: 
      * Zorg ervoor dat er geen scripts meer ingevoerd kunnen worden.
      * Hiervoor gebruik je de functie htmlspecialchars().
      * Pas elke ingevoerde variabele waarde aan met de functie htmlspecialchars().
