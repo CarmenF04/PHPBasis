@@ -56,10 +56,16 @@ if (isset($_POST['submit'])) {
     $woonplaats = htmlspecialchars($_POST['woonplaats']);
 
     /*
-     * OPDRACHT 3:
+     * OPDRACHT 3: KLAAr
      * Zorg ervoor dat de naam, straat en woonplaats met een hoofdletter beginnen
      * Hiervoor gebruik je de functie ucfirst()
-     *
+     */
+    
+    echo ucfirst($naam);
+    echo ucfirst($straat);
+    echo ucfirst($woonplaats);
+
+     /*
      * OPDRACHT 4:
      * Alle andere letters moeten kleine letters zijn
      * Hiervoor gebruik je de functie strtolower()
