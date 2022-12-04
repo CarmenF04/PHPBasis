@@ -5,6 +5,12 @@
     <title>String methodes</title>
 </head>
 <body>
+<?php
+
+    $fruit = 'ik eet fruit';
+
+echo str_replace("fruit", "groente", $fruit);
+?>
 
 <h2>String methodes</h2>
 <form action="" method="post">
@@ -42,6 +48,7 @@ if (isset($_POST['submit'])) {
      * Hiervoor gebruik je de functie htmlspecialchars().
      * Pas elke ingevoerde variabele waarde aan met de functie htmlspecialchars().
      */
+
     $naam = $_POST['naam'];
     $straat = $_POST['straat'];
     $huisnummer = $_POST['huisnummer'];
@@ -57,6 +64,7 @@ if (isset($_POST['submit'])) {
      * Alle andere letters moeten kleine letters zijn
      * Hiervoor gebruik je de functie strtolower()
      */
+    
     echo
         $naam, '<br>',
         $straat, '<br>',
