@@ -5,12 +5,6 @@
     <title>String methodes</title>
 </head>
 <body>
-<?php
-
-    $fruit = 'ik eet fruit';
-
-echo str_replace("fruit", "groente", $fruit);
-?>
 
 <h2>String methodes</h2>
 <form action="" method="post">
@@ -66,10 +60,15 @@ if (isset($_POST['submit'])) {
     echo ucfirst($woonplaats);
 
      /*
-     * OPDRACHT 4:
+     * OPDRACHT 4: KLAAR
      * Alle andere letters moeten kleine letters zijn
      * Hiervoor gebruik je de functie strtolower()
      */
+
+    echo strtolower($naam);
+    echo strtolower($straat);
+    echo strtolower($woonplaats);
+
     
     echo
         $naam, '<br>',
@@ -79,13 +78,16 @@ if (isset($_POST['submit'])) {
         $woonplaats, '<br>';
 
     /*
-     * OPDRACHT 5:
+     * OPDRACHT 5: ?
      * Check of het ingevoerde huisnummer werkelijk een nummer is.
      * Hiervoor gebruik je de functie is_numeric()
      * Is er geen nummer ingevoerd geef dan een melding dat er een nummer moet worden ingevoerd
      */
 
+     is_numeric($huisnummer);
+
 }
+
 ?>
 
 </body>
