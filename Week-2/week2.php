@@ -54,15 +54,24 @@ for ($weekdagen = 0; $weekdagen <= 10; $weekdagen++) {
  * HINT: de grootte van een array kun je met sizeof() en count() bepalen
  */
 
+    $omgekeerd = array();
+
+    array_push($omgekeerd, array_reverse($weekdagen));
+
+    print_r($omgekeerd);
+
+    $omgekeerd = array();
+
+//Deze opdracht ????
 
 /*
  * Opdracht 5:
  * Gebruik de functie array_reverse om hetzelfde resultaat als in opdracht 4 te verkrijgen.
  */
 
-    $omgekeerd = array();
-
     array_push($omgekeerd, array_reverse($weekdagen));
+
+    $omgekeerd = array_merge($omgekeerd[0]);
 
     print_r($omgekeerd);
 
