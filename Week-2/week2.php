@@ -6,6 +6,16 @@
  * Voor de key en value gebruik je kleine letters, geen hoofdletters
  */
 
+ $weekdagen = array(
+    'ma' => 'maandag',
+    'di' => 'dinsdag',
+    'wo' => 'woensdag',
+    'do' => 'donderdag',
+    'vr' => 'vrijdag',
+    'za' => 'zaterdag',
+    'zo' => 'zondag'
+    );
+
 /*
  * Opdracht 2: KLAAR
  * Gebruik een loop om van alle elementen van je array de waarde te tonen op het scherm
@@ -24,6 +34,18 @@ for ($weekdagen = 0; $weekdagen <= 10; $weekdagen++) {
  * Gebruik hiervoor de juiste functies
  */
 
+ foreach ($weekdagen as $key => $value) {
+    if ($key == 'za' || $key == 'zo') {
+        $weekdagen[$key] = strtoupper($value);
+    } else {
+        $weekdagen[$key] = ucfirst($value);
+    }
+
+    echo $weekdagen[$key] . PHP_EOL; 
+    //PHP_EOL staat voor End of Line oftewel een Newline.
+    //Een newline (\n of \r) staat in de internet wereld voor een nieuwe regel voor de HTML code en niet voor weergave.
+}
+
 /*
  * Opdracht 4:
  * Maak een nieuwe array en noem deze $omgekeerd.
@@ -32,17 +54,15 @@ for ($weekdagen = 0; $weekdagen <= 10; $weekdagen++) {
  * HINT: de grootte van een array kun je met sizeof() en count() bepalen
  */
 
+
 /*
  * Opdracht 5:
  * Gebruik de functie array_reverse om hetzelfde resultaat als in opdracht 4 te verkrijgen.
  */
 
-$weekdagen = array(
-    'ma' => 'maandag',
-    'di' => 'dinsdag',
-    'wo' => 'woensdag',
-    'do' => 'donderdag',
-    'vr' => 'vrijdag',
-    'za' => 'zaterdag',
-    'zo' => 'zondag'
-    );
+    $omgekeerd = array();
+
+    array_push($omgekeerd, array_reverse($weekdagen));
+
+    print_r($omgekeerd);
+
