@@ -27,7 +27,7 @@ for ($weekdagen = 0; $weekdagen <= 10; $weekdagen++) {
     } 
 
 /*
- * Opdracht 3:
+ * Opdracht 3: Klaar
  * Wijzig alle waardes in je array met behulp van een loop en een switch
  * Alle waardes moeten beginnen met een hoofdletter. Bij 'za' en 'zo' moeten de waardes
  * van de dagen geheel uit hoofdletters bestaan.
@@ -47,7 +47,7 @@ for ($weekdagen = 0; $weekdagen <= 10; $weekdagen++) {
 }
 
 /*
- * Opdracht 4:
+ * Opdracht 4: Klaar
  * Maak een nieuwe array en noem deze $omgekeerd.
  * De inhoud van deze array bestaat uit de elementen van de weekdagen array.
  * Gebruik hiervoor een for loop en array_push() om deze elementen te kopieren naar de nieuwe array
@@ -65,7 +65,7 @@ for ($weekdagen = 0; $weekdagen <= 10; $weekdagen++) {
 //Deze opdracht ????
 
 /*
- * Opdracht 5:
+ * Opdracht 5: klaar
  * Gebruik de functie array_reverse om hetzelfde resultaat als in opdracht 4 te verkrijgen.
  */
 
